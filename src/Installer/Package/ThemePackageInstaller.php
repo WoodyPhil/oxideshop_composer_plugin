@@ -67,6 +67,14 @@ class ThemePackageInstaller extends AbstractPackageInstaller
     /**
      * @param string $packagePath
      */
+    public function uninstall(string $packagePath): void
+    {
+        //not implemented yet
+    }
+
+    /**
+     * @param string $packagePath
+     */
     protected function copyPackage($packagePath)
     {
         $filtersToApply = [

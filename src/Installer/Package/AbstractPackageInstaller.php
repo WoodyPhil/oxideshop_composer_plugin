@@ -87,6 +87,11 @@ abstract class AbstractPackageInstaller
     abstract public function update($packagePath);
 
     /**
+     * @param string $packagePath
+     */
+    abstract public function uninstall(string $packagePath): void;
+
+    /**
      * @return string
      */
     protected function getRootDirectory()
